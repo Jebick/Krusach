@@ -1,0 +1,75 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Operator_for'
+  ClientHeight = 451
+  ClientWidth = 850
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Button1: TButton
+    Left = 72
+    Top = 400
+    Width = 75
+    Height = 25
+    Caption = #1053#1072' '#1075#1083#1072#1074#1085#1091#1102
+    TabOrder = 0
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 320
+    Top = 392
+    Width = 75
+    Height = 25
+    Caption = 'Button2'
+    TabOrder = 1
+    OnClick = Button2Click
+  end
+  object WebBrowser1: TWebBrowser
+    Left = 32
+    Top = 8
+    Width = 761
+    Height = 289
+    TabOrder = 2
+    ControlData = {
+      4C000000A74E0000DE1D00000000000000000000000000000000000000000000
+      000000004C000000000000000000000001000000E0D057007335CF11AE690800
+      2B2E126202000000000000004C0000000114020000000000C000000000000046
+      8000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000100000000000000000000000000000000000000}
+  end
+  object Button3: TButton
+    Left = 401
+    Top = 392
+    Width = 75
+    Height = 25
+    Caption = 'Button3'
+    TabOrder = 6
+    OnClick = Button3Click
+  end
+  object WindowsMediaPlayer1: TWindowsMediaPlayer
+    AlignWithMargins = True
+    Left = 48
+    Top = 24
+    Width = 729
+    Height = 345
+    TabOrder = 7
+    ControlData = {
+      0003000008006600000043003A005C00550073006500720073005C0068006F00
+      6D0065005C004400650073006B0074006F0070005C00500072006F0065006300
+      74005C0076006900640065006F0070006C00610079006200610063006B002E00
+      6D00700034002E006D007000340000000500000000000000F03F030000000000
+      0500000000000000000008000200000000000300010000000B00000003000000
+      00000B00FFFF08000200000000000300320000000B00000008000A0000006600
+      75006C006C0000000B0000000B0000000B00FFFF0B00FFFF0B00000008000200
+      000000000800020000000000080002000000000008000200000000000B000000
+      584B0000A8230000}
+  end
+end

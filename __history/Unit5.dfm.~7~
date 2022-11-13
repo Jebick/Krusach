@@ -1,0 +1,73 @@
+object Form5: TForm5
+  Left = 0
+  Top = 0
+  Caption = 'Test'
+  ClientHeight = 580
+  ClientWidth = 850
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesigned
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 77
+    Top = 416
+    Width = 5
+    Height = 24
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Times New Roman'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Button1: TButton
+    Left = 344
+    Top = 367
+    Width = 147
+    Height = 58
+    Caption = #1044#1072#1083#1077#1077
+    TabOrder = 0
+    OnClick = Button1Click
+  end
+  object RadioGroup1: TRadioGroup
+    Left = 304
+    Top = 80
+    Width = 247
+    Height = 49
+    Columns = 2
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Times New Roman'
+    Font.Style = []
+    Items.Strings = (
+      #1058#1077#1089#1090' '#8470'1'
+      #1058#1077#1089#1090' '#8470'2')
+    ParentFont = False
+    TabOrder = 1
+    OnClick = RadioGroup1Click
+  end
+  object RadioGroup2: TRadioGroup
+    Left = 77
+    Top = 144
+    Width = 705
+    Height = 217
+    Caption = #1042#1086#1087#1088#1086#1089#1099
+    TabOrder = 2
+  end
+  object Button2: TButton
+    Left = 40
+    Top = 56
+    Width = 75
+    Height = 25
+    Caption = #1053#1072' '#1075#1083#1072#1074#1085#1091#1102
+    TabOrder = 3
+    OnClick = Button2Click
+  end
+end

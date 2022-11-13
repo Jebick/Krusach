@@ -1,0 +1,61 @@
+unit Unit2;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.MPlayer,
+  Vcl.OleCtrls, SHDocVw, WMPLib_TLB, Vcl.Imaging.jpeg, Vcl.Imaging.pngimage;
+
+type
+  TForm2 = class(TForm)
+    WebBrowser1: TWebBrowser;
+    WindowsMediaPlayer1: TWindowsMediaPlayer;
+    Image7: TImage;
+    Image2: TImage;
+    Image1: TImage;
+    Image3: TImage;
+    procedure FormCreate(Sender: TObject);
+    procedure Image2Click(Sender: TObject);
+    procedure Image1Click(Sender: TObject);
+    procedure Image3Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form2: TForm2;
+
+implementation
+
+{$R *.dfm}
+
+
+procedure TForm2.FormCreate(Sender: TObject);
+begin
+ WebBrowser1.Hide;
+end;
+
+procedure TForm2.Image1Click(Sender: TObject);
+begin
+WebBrowser1.Show;
+WebBrowser1.Navigate(extractfilepath(paramstr(0))+'Прикол.htm');
+Image3.Visible:=True;
+Image1.Visible:=False;
+end;
+
+procedure TForm2.Image2Click(Sender: TObject);
+begin
+Close
+end;
+
+procedure TForm2.Image3Click(Sender: TObject);
+begin
+ WebBrowser1.Hide;
+ Image1.Visible:=True;
+Image3.Visible:=False;
+end;
+
+end.

@@ -1,0 +1,58 @@
+unit Unit2;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.MPlayer,
+  Vcl.OleCtrls, SHDocVw;
+
+type
+  TForm2 = class(TForm)
+    Button1: TButton;
+    MediaPlayer1: TMediaPlayer;
+    Panel1: TPanel;
+    Button2: TButton;
+    WebBrowser1: TWebBrowser;
+    procedure Button1Click(Sender: TObject);
+    procedure FormActivate(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form2: TForm2;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm2.Button1Click(Sender: TObject);
+begin
+Close
+end;
+
+procedure TForm2.Button2Click(Sender: TObject);
+begin
+WebBrowser1.Show;
+WebBrowser1.Navigate(extractfilepath(paramstr(0))+'Прикол.htm');
+end;
+
+procedure TForm2.FormActivate(Sender: TObject);
+begin
+MediaPlayer1.DeviceType:= dtAutoSelect;
+MediaPlayer1.filename:=('C:\Users\home\Desktop\Proect\паскаль-видео-урок-5_-цикл-while.-By-Mayer-S.F..avi');
+MediaPlayer1.open;
+MediaPlayer1.Play;
+end;
+
+procedure TForm2.FormCreate(Sender: TObject);
+begin
+ WebBrowser1.Hide;
+end;
+
+end.

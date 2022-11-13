@@ -1,0 +1,163 @@
+Условие:
+Составить программы ( используя оператор цикла For.), каждая из которых выводит на экран ваши Фамилию и Имя n+5 раз ( n – ваш номер в журнале). Задачу решить с использованием оператора цикла for 2 способами ( вариант to и downto).
+TO:
+
+
+program z1;
+var n, i:integer;
+
+name:string;
+begin
+  writeln('введите ваш номер в журнале'); readln(n);
+writeln('введите ФИО'); readln(name);
+for i:=1 to n+5 do begin
+writeln(i,' ',name);
+end;
+end.
+
+
+
+
+
+
+DOWNTWO:
+program z1;
+var n, i:integer; name:string; begin
+  writeln('введите ваш номер в журнале'); readln(n);
+writeln('введите ФИО'); readln(name);
+for i:=n+5 downto 1 do begin
+writeln(i,' ',name);
+  end; end.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+нет
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Условие:Дано вещественное число — цена 1 кг конфет. Вывести стоимость 1.2, 1.4, ..., 2 кг конфет.
+
+
+program for13;
+var a,i:integer; z:real;
+begin
+writeln('Цена конфет'); readln (a);
+for i := 1 to 10 do begin z:=((1+(i/10))*a);
+writeln(z);
+end;
+end.
+
+
+
+
+
+
+
+
+
+
+Условие:
+
+
+
+
+
+
+
+
+
+
+
+
+
+Условие
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:
+
+
+
+
+program task4k1; var n,q,i:integer; r,t:real;
+begin
+  writeln('введите q'); readln(q);
+r:=1;
+t:=1;
+for i:=2 to q do begin
+for n:=1 to i do begin
+  r:=r*i; end; t:=t+r; r:=1;
+end; writeln(t)
+end.
